@@ -42,7 +42,9 @@ const Projects = (props) => {
         {projectsData.loading ? (
           <PacmanLoader />
         ) : (
-          projectsData.projects.map((project) => <Project project={project} />)
+          projectsData.projects.map((project, idx) => (
+            <Project key={idx} project={project} />
+          ))
         )}
       </div>
     </div>
