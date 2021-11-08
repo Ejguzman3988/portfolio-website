@@ -2,8 +2,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   font-size: 2em;
   padding: 5% 20% 5% 20%;
   background: darkslategray;
   color: var(--blue-green);
+}
+
+.skills__front,
+.skills__back {
+  display: flex;
+  margin: 0 20px 50px 20px;
+}
+
+.skill {
+  margin: 0 20px 0 20px;
+  font-size: 0.5em;
+  text-align: center;
+}
+
+.skill__image {
+  width: 50px;
 }
