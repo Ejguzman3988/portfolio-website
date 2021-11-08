@@ -1,2 +1,47 @@
 .projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  height: 900px;
+  overflow-x: scroll;
+}
+.projects__header {
+  font-size: 3em;
+  text-align: center;
+}
+
+.projects__single {
+  margin: 0 100px 0 100px;
+  border: 10px var(--navy) ridge;
+  border-radius: 10px;
+  background-color: var(--pink);
+  height: 600px;
+  max-width: 400px;
+  min-width: 400px;
+  color: white;
+  box-shadow: 10px 10px 5px dimgrey;
+}
+
+/* TODO: CHECK NAMING OF NESTED __ CSS  */
+.projects__single--content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.projects__single--image {
+  margin-top: 45px;
+  height: 300px;
+  width: 300px;
+}
+.projects__single--title {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+.projects__single--description {
+  margin-top: 20px;
+  font-size: 0.75em;
 }
