@@ -1,0 +1,34 @@
+;{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Title of project",
+      "description": "Description of project, this project is very descriptive",
+      "imageUrl": "https://media2.giphy.com/media/3niRMHKDq4YDKkDObu/giphy.gif?cid=790b7611e58ff79f93c29fc1d62bf06c7b0b821df2b41c89&rid=giphy.gif&ct=g"
+    },
+    {
+      "id": 2,
+      "title": "Title of project",
+      "description": "Description of project, this project is very descriptive",
+      "imageUrl": "https://media2.giphy.com/media/3niRMHKDq4YDKkDObu/giphy.gif?cid=790b7611e58ff79f93c29fc1d62bf06c7b0b821df2b41c89&rid=giphy.gif&ct=g"
+    },
+    {
+      "id": 3,
+      "title": "Title of project",
+      "description": "Description of project, this project is very descriptive",
+      "imageUrl": "https://media2.giphy.com/media/3niRMHKDq4YDKkDObu/giphy.gif?cid=790b7611e58ff79f93c29fc1d62bf06c7b0b821df2b41c89&rid=giphy.gif&ct=g"
+    },
+    {
+      "id": 4,
+      "title": "Title of project",
+      "description": "Description of project, this project is very descriptive",
+      "imageUrl": "https://media2.giphy.com/media/3niRMHKDq4YDKkDObu/giphy.gif?cid=790b7611e58ff79f93c29fc1d62bf06c7b0b821df2b41c89&rid=giphy.gif&ct=g"
+    },
+    {
+      "id": 5,
+      "title": "Title of project",
+      "description": "Description of project, this project is very descriptive",
+      "imageUrl": "https://media2.giphy.com/media/3niRMHKDq4YDKkDObu/giphy.gif?cid=790b7611e58ff79f93c29fc1d62bf06c7b0b821df2b41c89&rid=giphy.gif&ct=g"
+    }
+  ]
+}
