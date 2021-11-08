@@ -1,2 +1,9 @@
 .skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  padding: 5% 20% 5% 20%;
+  background: darkslategray;
+  color: var(--blue-green);
 }
