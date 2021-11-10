@@ -16,7 +16,7 @@ const Skills = () => {
       { name: "Ruby", image: ruby },
       { name: "Rails", image: rails },
       { name: "PostgreSQL", image: pg },
-      { name: "Sqlite5", image: sqlite },
+      { name: "Sqlite", image: sqlite },
     ],
     frontEnd: [
       { name: "HTML", image: html },
