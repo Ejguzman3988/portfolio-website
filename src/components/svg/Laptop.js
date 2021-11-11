@@ -6,12 +6,18 @@ const Laptop = () => {
     <div>
       <svg
         height="512px"
-        style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+        style={{
+          shapeRendering: "geometricPrecision",
+          textRendering: "geometricPrecision",
+          imageRendering: "optimizeQuality",
+          fillRule: "evenodd",
+          clipRule: "evenodd",
+        }}
         viewBox="0 0 512 512"
         width="512px"
-        xml:space="preserve"
+        // xml:space="preserve"
         xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/jxlink"
+        // xmlns:xlink="http://www.w3.org/1999/xlink"
       >
         <defs></defs>
         <g id="Layer_x0020_1">
