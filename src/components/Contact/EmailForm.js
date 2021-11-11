@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import { PulseLoader } from "react-spinners";
+import LogoShadow from "../svg/LogoShadow";
 
 // TODO: DRY Up This Form
 const EmailForm = () => {
@@ -69,10 +70,9 @@ const EmailForm = () => {
 
   return (
     <div className="contact__header">
-      <h3>Contact:</h3>
       <form className="contact__form" onSubmit={handleSubmit}>
-        <p> Send me a message </p>
         <div className="contact__errors">{errors}</div>
+
         <label className="label-email" htmlFor="email">
           Your Email <span style={{ color: "#ff8484" }}>*</span>
         </label>

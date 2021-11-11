@@ -7,18 +7,19 @@
 }
 
 .contact__form {
-  padding: 20px;
   border: 5px black solid;
   border-radius: 3px;
+  padding: 0 20px 50px 20px;
+  width: 50vw;
   box-shadow: 2px 5px 5px #0c1835;
   display: grid;
   grid-template-areas:
-    "error    header"
+    "error    error"
     "emailL   emailI"
     "messageL messageI"
     "null     btn";
   grid-template-columns: 1.5fr 2fr;
-  grid-template-rows: 1fr 0.2fr 1fr 0.25fr;
+  grid-template-rows: 0fr 0.2fr 1fr 0.25fr;
   grid-gap: 10px;
 }
 
@@ -51,4 +52,25 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+.logo-grin {
+  transform: translateX(-25%);
+}
+
+.logo-grin::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  content: "Contact Me";
+  color: var(--blue-green);
+  position: absolute;
+  background: darkslategray;
+  border: 5px var(--navy) solid;
+  width: 240px;
+  height: 50px;
+  border-radius: 100%;
+  transform: translate(80px, 320px);
+  animation: change-colors 15s ease-in-out infinite;
+  box-shadow: 0px 5px 50px dimgrey;
 }
