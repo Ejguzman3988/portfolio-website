@@ -15,15 +15,14 @@
 
 .projects__single {
   font-size: 1em;
-  margin: 2px;
-  border: 1px black inset;
+  margin: 50px 0;
   border-radius: 10px;
-  background-color: var(--navy);
-  height: 250px;
-  max-width: 300px;
-  min-width: 300px;
   color: white;
   box-shadow: 2px 2px 5px dimgrey;
+}
+.laptop {
+  height: 400px;
+  width: 400px;
 }
 
 /* TODO: CHECK NAMING OF NESTED __ CSS  */
