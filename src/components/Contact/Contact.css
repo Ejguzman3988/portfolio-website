@@ -1,9 +1,54 @@
 .contact {
-  background: var(--navy);
-  color: white;
+  background: darkslategray;
+  color: var(--blue-green);
+  display: flex;
+  font-size: 2em;
+  padding: 5% 20% 5% 20%;
+}
+
+.contact__form {
+  padding: 20px;
+  border: 5px black solid;
+  border-radius: 3px;
+  box-shadow: 2px 5px 5px #0c1835;
+  display: grid;
+  grid-template-areas:
+    "error    header"
+    "emailL   emailI"
+    "messageL messageI"
+    "null     btn";
+  grid-template-columns: 1.5fr 2fr;
+  grid-template-rows: 1fr 0.2fr 1fr 0.25fr;
+  grid-gap: 10px;
+}
+
+.label-email {
+  grid-area: emailL;
+}
+.contact__form #email {
+  grid-area: emailI;
+}
+.label-message {
+  grid-area: messageL;
+}
+.contact__form #message {
+  grid-area: messageI;
+}
+
+.contact__form .btn {
+  grid-area: btn;
+}
+.contact__form p {
+  grid-area: header;
+}
+
+.contact__errors {
+  grid-area: error;
+  color: #ff8484;
+  font-size: 0.5em;
+  font-weight: bolder;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2em;
-  padding: 5% 20% 5% 20%;
+  text-align: center;
 }

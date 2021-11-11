@@ -1,8 +1,13 @@
 import React from "react";
 import "./Contact.css";
+import EmailForm from "./EmailForm";
 
 const Contact = () => {
-  return <div className="contact">Contact Me!</div>;
+  return (
+    <div className="contact">
+      <EmailForm />
+    </div>
+  );
 };
 
 export default Contact;
