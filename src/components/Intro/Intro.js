@@ -7,7 +7,6 @@ const Intro = () => {
       <div className="intro__greet">Hi, I'm</div>
       <div className="intro__name">
         Eriberto Guzman <br />
-        Software Engineer
       </div>
     </div>
   );

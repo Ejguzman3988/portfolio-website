@@ -37,7 +37,6 @@ const Projects = (props) => {
   };
   return (
     <div>
-      <h2 className={"projects__header"}>Projects</h2>
       <div className="projects">
         {projectsData.loading ? (
           <PacmanLoader />
