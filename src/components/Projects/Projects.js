@@ -33,7 +33,7 @@ const Projects = (props) => {
         errors: [],
         projects: data,
       });
-    }, 1000);
+    }, 5000);
   };
   return (
     <div>

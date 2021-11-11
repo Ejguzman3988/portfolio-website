@@ -2,9 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2em;
-  height: 900px;
-  overflow-x: scroll;
+  align-content: flex-start;
+  font-size: 1em;
+  flex-wrap: wrap;
+  height: 100%;
+  margin: -200px 15% 0 15%;
 }
 .projects__header {
   font-size: 3em;
@@ -12,15 +14,16 @@
 }
 
 .projects__single {
-  margin: 0 100px 0 100px;
-  border: 10px var(--navy) ridge;
+  font-size: 1em;
+  margin: 2px;
+  border: 1px black inset;
   border-radius: 10px;
-  background-color: var(--pink);
-  height: 600px;
-  max-width: 400px;
-  min-width: 400px;
+  background-color: var(--navy);
+  height: 250px;
+  max-width: 300px;
+  min-width: 300px;
   color: white;
-  box-shadow: 10px 10px 5px dimgrey;
+  box-shadow: 2px 2px 5px dimgrey;
 }
 
 /* TODO: CHECK NAMING OF NESTED __ CSS  */
@@ -34,8 +37,8 @@
 
 .projects__single--image {
   margin-top: 45px;
-  height: 300px;
-  width: 300px;
+  height: 100px;
+  width: 100px;
 }
 .projects__single--title {
   font-size: 1.25em;
