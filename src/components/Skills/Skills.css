@@ -7,6 +7,7 @@
   padding: 5% 20% 5% 20%;
   background: darkslategray;
   color: var(--blue-green);
+  box-shadow: 0px 5px 50px dimgrey;
 }
 
 .skills__front,

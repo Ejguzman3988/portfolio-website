@@ -4,6 +4,7 @@
   display: flex;
   font-size: 2em;
   padding: 5% 20% 5% 20%;
+  box-shadow: 0px 5px 50px dimgrey;
 }
 
 .contact__form {
