@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import video from "../../videos/test.mp4";
 import "./Laptop.css";
 
-const Laptop = () => {
+const Laptop = ({ project }) => {
+  const [modal, setModal] = useState(false);
+
+  useEffect(() => {
+    if (modal) {
+      document.body.style.overflow = "hidden";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [modal]);
+
+  const handleClick = (e) => {
+    setModal(!modal);
+  };
+
   return (
     <div>
       <svg
@@ -13,10 +29,9 @@ const Laptop = () => {
           clipRule: "evenodd",
         }}
         viewBox="0 0 512 512"
-        className="laptop"
-        // xml:space="preserve"
-        xmlns="http://www.w3.org/2000/svg"
-        // xmlns:xlink="http://www.w3.org/1999/xlink"
+        className={modal ? "laptop-modal" : "laptop"}
+        onClick={handleClick}
+        space="preserve"
       >
         <defs></defs>
         <g id="Layer_x0020_1">
@@ -35,14 +50,31 @@ const Laptop = () => {
               d="M94.8858 136.354l320.496 0c3.17254,0 5.76832,2.59616 5.76832,5.76832l0 205.45c0,3.17254 -2.59616,5.76832 -5.76832,5.76832l-320.496 0c-3.17254,0 -5.76832,-2.5954 -5.76832,-5.76832l0 -205.45c0,-3.17254 2.59578,-5.76832 5.76832,-5.76832z"
               id="_394805568"
             />
-            <rect
-              class="fil3 str0"
-              height="194.209"
-              id="_394805856"
-              width="312.421"
-              x="99.7316"
-              y="148.522"
-            />
+            {modal ? (
+              <rect
+                class="screen"
+                id="_394805856"
+                x="99.7316"
+                y="148.522"
+                opacity="0"
+              />
+            ) : (
+              <>
+                <clipPath id="screen">
+                  <rect
+                    class="screen"
+                    id="_394805856"
+                    x="99.7316"
+                    y="148.522"
+                  />
+                </clipPath>
+                <image
+                  className="screen-image"
+                  href={project.imageUrl}
+                  clipPath="url(#screen)"
+                />
+              </>
+            )}
             <g>
               <rect
                 class="fil4"
@@ -85,6 +117,16 @@ const Laptop = () => {
           </g>
         </g>
       </svg>
+      <div
+        onClick={handleClick}
+        className={modal ? "video-modal" : "hide-video"}
+      >
+        <iframe
+          src={video}
+          title="description"
+          className={modal ? "video" : "hide-video"}
+        ></iframe>
+      </div>
     </div>
   );
 };

@@ -6,10 +6,12 @@ const Project = ({ project }) => {
   return (
     <div className="projects__single">
       <div className="projects__single--content">
-        <Laptop />
-        <div className="projects__single--title">{project.title}</div>
-        <div className="projects__single--description">
-          {project.description}
+        <Laptop project={project} />
+        <div className="projects__single--text">
+          <div className="projects__single--title">{project.title}</div>
+          <div className="projects__single--description">
+            {project.description}
+          </div>
         </div>
       </div>
     </div>

@@ -26,17 +26,17 @@ const Projects = (props) => {
     }
 
     let data = await resp.json();
-    setTimeout(() => {
-      setProjectsData({
-        ...projectsData,
-        loading: false,
-        errors: [],
-        projects: data,
-      });
-    }, 5000);
+    // setTimeout(() => {
+    // }, 5000);
+    setProjectsData({
+      ...projectsData,
+      loading: false,
+      errors: [],
+      projects: data,
+    });
   };
   return (
-    <div>
+    <div id="projects">
       <div className="projects">
         {projectsData.loading ? (
           <PacmanLoader />
