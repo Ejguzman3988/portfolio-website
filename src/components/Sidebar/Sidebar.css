@@ -1,0 +1,18 @@
+.sidebar {
+  position: absolute;
+  top: 30%;
+  left: 0px;
+  height: 40vh;
+  width: 100px;
+  /* opacity: 0.95; */
+  /* border: 5px #2f4f4f double; */
+  box-shadow: 10px 5px 30px rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #393939 0%, #151515 100%);
+}
+.sidebar__logos {
+  width: 80px;
+}
