@@ -9,6 +9,7 @@ const LogoSmile = () => {
         viewBox="0 0 177 185"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        className="smile"
       >
         <g id="logoSmile">
           <ellipse id="background" cx="88" cy="92" rx="59" ry="57" />
@@ -80,7 +81,8 @@ const LogoSmile = () => {
               />
             </g>
           </g>
-          <g id="head" filter="url(#filter4_di_32_5)">
+
+          <g className="head" filter="url(#filter4_di_32_5)">
             <g id="skull">
               <path
                 id="jaw"
@@ -98,11 +100,13 @@ const LogoSmile = () => {
                 id="Rectangle 3"
                 d="M55 69C55 66.2386 57.2386 64 60 64H61V83H60C57.2386 83 55 80.7614 55 78V69Z"
                 fill="#D3A68C"
+                //
               />
               <path
                 id="Rectangle 4"
                 d="M122 69C122 66.2386 119.761 64 117 64H116V83H117C119.761 83 122 80.7614 122 78V69Z"
                 fill="#D3A68C"
+                //
               />
             </g>
             <g id="face_2">
@@ -232,6 +236,7 @@ const LogoSmile = () => {
             </g>
           </g>
         </g>
+
         <defs>
           <filter
             id="filter0_d_32_5"
