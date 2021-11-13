@@ -25,3 +25,14 @@
 .skill__image {
   width: 50px;
 }
+
+@media only screen and (max-width: 600px) {
+  .skills__front,
+  .skills__back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px 50px 20px;
+  }
+}

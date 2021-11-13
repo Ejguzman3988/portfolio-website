@@ -19,13 +19,24 @@ const Sidebar = () => {
     setNewTop(window.scrollY + Math.abs(window.screenY * 0.5));
   };
 
+  const links = [
+    { image: linkedin, url: "https://www.linkedin.com/in/eriberto-guzman" },
+    { image: twitch, url: "https://www.twitch.tv/eridotdev" },
+    {
+      image: youtube,
+      url: "https://www.youtube.com/channel/UCg_UvLDQvjd_kEunSlt8NTg/featured",
+    },
+    { image: github, url: "https://github.com/Ejguzman3988" },
+  ];
+
   return (
     <div className="sidebar" style={{ top: newTop }}>
       <div className="sidebar__logos">
-        <img src={linkedin} />
-        <img src={twitch} />
-        <img src={youtube} />
-        <img src={github} />
+        {links.map((link) => (
+          <a href={link.url} target="_blank">
+            <img src={link.image}></img>
+          </a>
+        ))}
       </div>
     </div>
   );

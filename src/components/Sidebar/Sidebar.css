@@ -1,7 +1,7 @@
 .sidebar {
   position: absolute;
   top: 30%;
-  left: 0px;
+  right: 0px;
   height: 40vh;
   width: 100px;
   /* opacity: 0.95; */
@@ -15,4 +15,24 @@
 }
 .sidebar__logos {
   width: 80px;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    position: absolute;
+    top: 30%;
+    right: 0px;
+    height: 30vh;
+    width: 50px;
+
+    box-shadow: 10px 5px 30px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #393939 0%, #151515 100%);
+  }
+  .sidebar__logos {
+    width: 50px;
+  }
 }

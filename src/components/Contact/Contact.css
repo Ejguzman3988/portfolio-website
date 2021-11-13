@@ -75,3 +75,36 @@
   animation: change-colors 15s ease-in-out infinite;
   box-shadow: 0px 5px 50px dimgrey;
 }
+/* Portrait and Landscape */
+@media only screen and (max-width: 600px) {
+  .contact {
+    background: darkslategray;
+    color: var(--blue-green);
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    padding: 5% 20% 5% 20%;
+    box-shadow: 0px 5px 50px dimgrey;
+  }
+  .contact__form {
+    margin-left: 20%;
+    width: 100%;
+    font-size: 0.75rem;
+    border: 5px black solid;
+    border-radius: 3px;
+    /* padding: 0 20px 50px 20px; */
+    /* width: 50vw; */
+    box-shadow: 2px 5px 5px #0c1835;
+    display: grid;
+    grid-template-areas:
+      "error"
+      "emailL"
+      "emailI"
+      "messageL"
+      "messageI"
+      "btn";
+    grid-template-columns: 1.5fr 2fr;
+    grid-template-rows: 0fr 0.2fr 1fr 0.25fr;
+    grid-gap: 10px;
+  }
+}
