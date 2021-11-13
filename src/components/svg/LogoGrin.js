@@ -87,7 +87,7 @@ const LogoGrin = () => {
               />
             </g>
           </g>
-          <g id="head" filter="url(#filter4_di_32_265)">
+          <g id="head" filter="url(#filter4_di_32_265)" className="head">
             <g id="skull">
               <path
                 id="jaw"
