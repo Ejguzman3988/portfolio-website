@@ -7,7 +7,8 @@ const Projects = (props) => {
   const [projectsData, setProjectsData] = useState({
     projects: [],
     loading: true,
-    errors: [],
+    errors: ["Error when getting data from server."],
+    requestAgain: true,
   });
   useEffect(() => {
     const fetchProjects = () => {
@@ -19,18 +20,26 @@ const Projects = (props) => {
             loading: false,
             errors: [],
             projects: data,
+            requestAgain: false,
           });
         })
         .catch((errors) => {
-          setProjectsData({
-            ...projectsData,
-            loading: true,
-            errors: [errors, ...projectsData.errors],
-          });
-          alert(projectsData.errors.join("\n"));
+          setTimeout(() => {
+            setProjectsData({
+              ...projectsData,
+              loading: true,
+              errors: [errors, ...projectsData.errors],
+              requestAgain: false,
+            });
+            console.log("time");
+            alert(projectsData.errors.join("\n"));
+          }, 5000);
         });
     };
-    if (projectsData.projects.length === 0) {
+    if (
+      projectsData.projects.length === 0 &&
+      projectsData.requestAgain == true
+    ) {
       fetchProjects();
     }
   }, [projectsData]);
@@ -39,7 +48,19 @@ const Projects = (props) => {
     <div id="projects">
       <div className="projects">
         {projectsData.loading ? (
-          <PacmanLoader />
+          <>
+            <PacmanLoader />
+            {projectsData.requestAgain ? null : (
+              <button
+                onClick={() =>
+                  setProjectsData({ ...projectsData, requestAgain: true })
+                }
+                style={{ marginTop: "30%" }}
+              >
+                Request Again!
+              </button>
+            )}
+          </>
         ) : (
           projectsData.projects.map((project, idx) => (
             <Project key={idx} project={project} />
