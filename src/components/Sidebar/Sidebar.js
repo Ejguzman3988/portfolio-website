@@ -20,21 +20,34 @@ const Sidebar = () => {
   };
 
   const links = [
-    { image: linkedin, url: "https://www.linkedin.com/in/eriberto-guzman" },
-    { image: twitch, url: "https://www.twitch.tv/eridotdev" },
+    {
+      image: linkedin,
+      description: "LinkedIn Logo",
+      url: "https://www.linkedin.com/in/eriberto-guzman",
+    },
+    {
+      image: twitch,
+      description: "Twitch Logo",
+      url: "https://www.twitch.tv/eridotdev",
+    },
     {
       image: youtube,
+      description: "Youtube Logo",
       url: "https://www.youtube.com/channel/UCg_UvLDQvjd_kEunSlt8NTg/featured",
     },
-    { image: github, url: "https://github.com/Ejguzman3988" },
+    {
+      image: github,
+      description: "Github Logo",
+      url: "https://github.com/Ejguzman3988",
+    },
   ];
 
   return (
     <div className="sidebar" style={{ top: newTop }}>
       <div className="sidebar__logos">
         {links.map((link, idx) => (
-          <a href={link.url} key={idx} target="_blank">
-            <img src={link.image}></img>
+          <a href={link.url} key={idx} target="_blank" rel="noreferrer">
+            <img src={link.image} alt={link.description}></img>
           </a>
         ))}
       </div>

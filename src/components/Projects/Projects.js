@@ -10,30 +10,31 @@ const Projects = (props) => {
     errors: [],
   });
   useEffect(() => {
-    fetchProjects();
-  }, []);
+    const fetchProjects = () => {
+      fetch("http://localhost:4000/projects")
+        .then((resp) => resp.json())
+        .then((data) => {
+          setProjectsData({
+            ...projectsData,
+            loading: false,
+            errors: [],
+            projects: data,
+          });
+        })
+        .catch((errors) => {
+          setProjectsData({
+            ...projectsData,
+            loading: true,
+            errors: [errors, ...projectsData.errors],
+          });
+          alert(projectsData.errors.join("\n"));
+        });
+    };
+    if (projectsData.projects.length === 0) {
+      fetchProjects();
+    }
+  }, [projectsData]);
 
-  const fetchProjects = async () => {
-    const errorMessage = "YOUR JSON-SERVER IS NOT ON BRO. TURN IT ON!";
-    fetch("http://localhost:4000/projects")
-      .then((resp) => resp.json)
-      .then((data) => {
-        setProjectsData({
-          ...projectsData,
-          loading: false,
-          errors: [],
-          projects: data,
-        });
-      })
-      .catch((errors) => {
-        setProjectsData({
-          ...projectsData,
-          loading: true,
-          errors: [errors, ...projectsData.errors],
-        });
-        alert(projectsData.errors.join("\n"));
-      });
-  };
   return (
     <div id="projects">
       <div className="projects">

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import { PulseLoader } from "react-spinners";
-import LogoShadow from "../svg/LogoShadow";
 
 // TODO: DRY Up This Form
 const EmailForm = () => {

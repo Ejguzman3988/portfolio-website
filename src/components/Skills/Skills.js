@@ -13,24 +13,28 @@ import "./Skills.css";
 const Skills = () => {
   const skills = {
     backEnd: [
-      { name: "Ruby", image: ruby },
-      { name: "Rails", image: rails },
-      { name: "PostgreSQL", image: pg },
-      { name: "Sqlite", image: sqlite },
+      { name: "Ruby", image: ruby, description: "Logo" },
+      { name: "Rails", image: rails, description: "Logo" },
+      { name: "PostgreSQL", image: pg, description: "Logo" },
+      { name: "Sqlite", image: sqlite, description: "Logo" },
     ],
     frontEnd: [
-      { name: "HTML", image: html },
-      { name: "JavaScript", image: javascript },
-      { name: "CSS", image: css },
-      { name: "REACT", image: react },
-      { name: "Redux", image: redux },
+      { name: "HTML", image: html, description: "Logo" },
+      { name: "JavaScript", image: javascript, description: "Logo" },
+      { name: "CSS", image: css, description: "Logo" },
+      { name: "REACT", image: react, description: "Logo" },
+      { name: "Redux", image: redux, description: "Logo" },
     ],
   };
 
   const stackMap = (stack) =>
     skills[stack].map((skill, idx) => (
       <div className="skill" key={idx}>
-        <img className="skill__image" src={skill.image}></img>
+        <img
+          className="skill__image"
+          src={skill.image}
+          alt={`${skill.name.toUpperCase()} ${skill.description}`}
+        ></img>
         <div className="skill__name">{skill.name}</div>
       </div>
     ));
