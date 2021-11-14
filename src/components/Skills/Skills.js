@@ -28,8 +28,8 @@ const Skills = () => {
   };
 
   const stackMap = (stack) =>
-    skills[stack].map((skill) => (
-      <div className="skill">
+    skills[stack].map((skill, idx) => (
+      <div className="skill" key={idx}>
         <img className="skill__image" src={skill.image}></img>
         <div className="skill__name">{skill.name}</div>
       </div>

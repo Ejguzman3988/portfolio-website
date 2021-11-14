@@ -14,26 +14,25 @@ const Projects = (props) => {
   }, []);
 
   const fetchProjects = async () => {
-    let resp = await fetch("http://localhost:4000/projects");
     const errorMessage = "YOUR JSON-SERVER IS NOT ON BRO. TURN IT ON!";
-    if (!resp.ok) {
-      setProjectsData({
-        ...projectsData,
-        loading: true,
-        errors: [errorMessage, ...projectsData],
+    fetch("http://localhost:4000/projects")
+      .then((resp) => resp.json)
+      .then((data) => {
+        setProjectsData({
+          ...projectsData,
+          loading: false,
+          errors: [],
+          projects: data,
+        });
+      })
+      .catch((errors) => {
+        setProjectsData({
+          ...projectsData,
+          loading: true,
+          errors: [errors, ...projectsData.errors],
+        });
+        alert(projectsData.errors.join("\n"));
       });
-      alert(projectsData.errors.join("\n"));
-    }
-
-    let data = await resp.json();
-    // setTimeout(() => {
-    // }, 5000);
-    setProjectsData({
-      ...projectsData,
-      loading: false,
-      errors: [],
-      projects: data,
-    });
   };
   return (
     <div id="projects">

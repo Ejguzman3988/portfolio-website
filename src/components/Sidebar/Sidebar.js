@@ -32,8 +32,8 @@ const Sidebar = () => {
   return (
     <div className="sidebar" style={{ top: newTop }}>
       <div className="sidebar__logos">
-        {links.map((link) => (
-          <a href={link.url} target="_blank">
+        {links.map((link, idx) => (
+          <a href={link.url} key={idx} target="_blank">
             <img src={link.image}></img>
           </a>
         ))}

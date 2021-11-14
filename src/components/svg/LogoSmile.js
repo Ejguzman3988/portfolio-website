@@ -2,7 +2,7 @@ import React from "react";
 
 const LogoSmile = () => {
   return (
-    <div class="logo-smile">
+    <div className="logo-smile">
       <svg
         width="400"
         height="418"
@@ -145,7 +145,7 @@ const LogoSmile = () => {
                   id="Vector 16"
                   d="M80 87.5H96"
                   stroke="black"
-                  stroke-opacity="0.13"
+                  strokeOpacity="0.13"
                 />
                 <path
                   id="Vector 14"
@@ -156,31 +156,31 @@ const LogoSmile = () => {
                   id="Vector 17"
                   d="M78 87.5H79M78 90.5H79M79 92.5H80M95 92.5H96M96 91.5H97M97 88.5H98M97 89.5H97.5H98M92.5 95.5V96V96.5M83.5 96V96.5V97V97.5M81.5 95V95.5V96M80.5 94V94.5M82.5 96V96.5M84.5 97V97.5M85.5 97V97.5V98M86.5 97.5V98M89.5 97.5V98M88.5 97.5V98M87.5 97.5V98M90.5 97V97.5M91.5 96V97M93.5 95V95.5M94.5 94V94.5"
                   stroke="black"
-                  stroke-opacity="0.13"
+                  strokeOpacity="0.13"
                 />
                 <path
                   id="Vector 19"
                   d="M92.5 93V93.5V94"
                   stroke="black"
-                  stroke-opacity="0.13"
+                  strokeOpacity="0.13"
                 />
                 <path
                   id="Vector 20"
                   d="M85.5 96.5V97.5M86.5 97V97.5M89.5 97V97.5M90.5 96.5V97.5"
                   stroke="black"
-                  stroke-opacity="0.13"
+                  strokeOpacity="0.13"
                 />
                 <path
                   id="Vector 21"
                   d="M83.5 95.5V96M91.5 95.5V96"
                   stroke="black"
-                  stroke-opacity="0.13"
+                  strokeOpacity="0.13"
                 />
                 <path
                   id="Vector 18"
                   d="M87.5 93V94M83 93V94M82.5 93.5V94"
                   stroke="black"
-                  stroke-opacity="0.13"
+                  strokeOpacity="0.13"
                 />
               </g>
             </g>
@@ -245,9 +245,9 @@ const LogoSmile = () => {
             width="34.0532"
             height="31.7146"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -280,9 +280,9 @@ const LogoSmile = () => {
             width="34.0532"
             height="31.7146"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -315,9 +315,9 @@ const LogoSmile = () => {
             width="30.9457"
             height="31.4141"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -350,9 +350,9 @@ const LogoSmile = () => {
             width="45"
             height="31"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -385,9 +385,9 @@ const LogoSmile = () => {
             width="75"
             height="94.9514"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -438,9 +438,9 @@ const LogoSmile = () => {
             width="18"
             height="10"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -477,9 +477,9 @@ const LogoSmile = () => {
             width="18"
             height="10"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -516,9 +516,9 @@ const LogoSmile = () => {
             width="18"
             height="10"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -555,9 +555,9 @@ const LogoSmile = () => {
             width="52"
             height="11"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
