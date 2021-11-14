@@ -1,4 +1,4 @@
-// import React from "react";
+import React from "react";
 import LogoGrin from "../svg/LogoGrin";
 import "./Contact.css";
 import EmailForm from "./EmailForm";
