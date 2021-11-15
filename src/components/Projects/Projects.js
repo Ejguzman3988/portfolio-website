@@ -24,16 +24,14 @@ const Projects = (props) => {
           });
         })
         .catch((errors) => {
-          setTimeout(() => {
-            setProjectsData({
-              ...projectsData,
-              loading: true,
-              errors: [errors, ...projectsData.errors],
-              requestAgain: false,
-            });
-            console.log("time");
-            alert(projectsData.errors.join("\n"));
-          }, 5000);
+          setProjectsData({
+            ...projectsData,
+            loading: true,
+            errors: [errors, ...projectsData.errors],
+            requestAgain: false,
+          });
+          console.log("time");
+          alert(projectsData.errors.join("\n"));
         });
     };
     if (
@@ -57,7 +55,7 @@ const Projects = (props) => {
                 }
                 style={{ marginTop: "30%" }}
               >
-                Request Again!
+                Fetch Projects
               </button>
             )}
           </>

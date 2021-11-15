@@ -34,8 +34,8 @@ const Laptop = ({ project }) => {
         space="preserve"
       >
         <defs></defs>
-        <g id="Layer_x0020_1">
-          <rect className="fil0" height="512" width="512" y="0.000377953" />
+        <g id="Layer_x0020_1" className="actual-laptop">
+          <rect className="fil0" y="0.000377953" />
           <g id="_275676976">
             <rect
               className="fil1"
@@ -125,6 +125,9 @@ const Laptop = ({ project }) => {
           src={video}
           title="description"
           className={modal ? "video" : "hide-video"}
+          allowfullscreen
+          frameborder="0"
+          allow="autoplay"
         ></iframe>
       </div>
     </div>

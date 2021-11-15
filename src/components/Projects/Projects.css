@@ -1,6 +1,6 @@
 :root {
-  --lap-height: 100%;
-  --lap-width: 100%;
+  --lap-height: 300px;
+  --lap-width: 300px;
   --modal-height: 100vh;
   --modal-width: 100vw;
   --screen-height: 194.209px;
@@ -83,7 +83,7 @@
   position: fixed;
   top: 0px;
   left: 0px;
-  background: rgba(128, 128, 128, 0.496);
+  background: rgba(128, 128, 128, 0.721);
   height: 100%;
   width: 100%;
   z-index: 1;
@@ -98,7 +98,7 @@
   background: rgba(128, 128, 128, 0.496);
   height: 100%;
   width: 100%;
-  z-index: 1;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -114,6 +114,7 @@
   width: 31%;
   z-index: 100;
   margin-top: -25px;
+  z-index: 99;
   /* margin-bottom: 20px; */
   border: rgba(0, 0, 0, 0.215) inset;
   /* border-width: 30px; */
@@ -127,7 +128,36 @@
   display: none;
 }
 
+.actual-laptop {
+  border: red solid;
+}
+
 @media only screen and (max-width: 600px) {
+  .laptop {
+    margin-top: 0;
+    border-right: none;
+    height: var(--lap-height);
+    width: var(--lap-width);
+    background: darkslategrey;
+  }
+  .projects__single--text {
+    padding: 0 20px;
+    display: flex;
+    border-top: 5px black solid;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+    height: 35vh;
+  }
+
+  .projects__single--content {
+    display: flex;
+    background-color: darkslategrey;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 10px; */
+  }
   .video-modal {
     position: fixed;
     top: 0px;
@@ -135,7 +165,7 @@
     background: rgba(128, 128, 128, 0.496);
     height: 100%;
     width: 100%;
-    z-index: 1;
+    z-index: 6;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -146,6 +176,24 @@
     width: 60%;
     z-index: 100;
     margin-top: -25px;
-    border: rgba(0, 0, 0, 0.215) inset;
+    border: none;
+    animation: 2s fade-in linear 1 forwards;
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      width: 60%;
+    }
+    75% {
+      opacity: 1;
+      width: 60%;
+      transform: translateY(0);
+      box-shadow: none;
+    }
+    100% {
+      width: 100%;
+      height: 100%;
+      transform: translateY(-50px);
+    }
   }
 }
