@@ -3,3 +3,9 @@
   --pink: #9c5ddb;
   --blue-green: #56e8d5;
 }
+
+html,
+body {
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+}
