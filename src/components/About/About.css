@@ -57,11 +57,14 @@
   transform: rotateY(90deg) translateZ(50vw);
 }
 
+/* 1 sec transition 1.85%  */
+/* 12.5 sec transition 23.15%  */
+
 @keyframes turn {
   0% {
     transform: rotate(0);
   }
-  12.5% {
+  23.15% {
     transform: rotate(0);
   }
 
@@ -69,20 +72,20 @@
     transform: rotateY(90deg);
   }
 
-  37.5% {
+  48.15% {
     transform: rotateY(90deg);
   }
 
   50% {
     transform: rotateY(180deg);
   }
-  62.5% {
+  73.15% {
     transform: rotateY(180deg);
   }
   75% {
     transform: rotateY(270deg);
   }
-  87.5% {
+  98.15% {
     transform: rotateY(270deg);
   }
   100% {

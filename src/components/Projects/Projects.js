@@ -36,7 +36,7 @@ const Projects = (props) => {
     };
     if (
       projectsData.projects.length === 0 &&
-      projectsData.requestAgain == true
+      projectsData.requestAgain === true
     ) {
       fetchProjects();
     }

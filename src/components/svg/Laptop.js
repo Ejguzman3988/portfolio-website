@@ -121,6 +121,9 @@ const Laptop = ({ project }) => {
         onClick={handleClick}
         className={modal ? "video-modal" : "hide-video"}
       >
+        <div className="exit-video" onClick={() => setModal(false)}>
+          &#9746;
+        </div>
         <iframe
           src={video}
           title="description"
