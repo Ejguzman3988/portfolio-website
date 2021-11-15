@@ -40,7 +40,12 @@
 
 .head {
   transform-origin: center;
+  transform: rotate(0) translate(0, 3px);
   animation: head-tilt 10s ease-in-out infinite;
+}
+
+#body {
+  animation: shoulder-raise 6s ease-in-out infinite;
 }
 
 @keyframes change-colors {
@@ -73,16 +78,36 @@
 
 @keyframes head-tilt {
   0% {
-    transform: rotate(0) translate(0);
+    transform: rotate(0) translate(0, 3px);
   }
   25% {
-    transform: rotate(4deg) translate(2px, 2px);
+    transform: rotate(2deg) translate(1px, 5px);
   }
 
   50% {
-    transform: rotate(0deg) translate(0);
+    transform: rotate(0deg) translate(0, 3px);
   }
   75% {
-    transform: rotate(-4deg) translate(-2px, 2px);
+    transform: rotate(-2deg) translate(-1px, 5px);
+  }
+}
+
+@keyframes shoulder-raise {
+  0% {
+    transform: translate(0);
+    scale: 1;
+  }
+  25% {
+    transform: translate(-2px, -2px);
+    scale: 1.02;
+  }
+
+  50% {
+    transform: translate(0);
+    scale: 1;
+  }
+  75% {
+    transform: translate(-2px, -2px);
+    scale: 1.02;
   }
 }
