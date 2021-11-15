@@ -94,20 +94,20 @@
 
 @keyframes shoulder-raise {
   0% {
-    transform: translate(0);
-    scale: 1;
+    -moz-transform: scale(1) translate(0);
+    -webkit-transform: scale(1) translate(0);
   }
   25% {
-    transform: translate(-2px, -2px);
-    scale: 1.02;
+    -moz-transform: scale(1.02) translate(-2px, -2px);
+    -webkit-transform: scale(1.02) translate(-2px, -2px);
   }
 
   50% {
-    transform: translate(0);
-    scale: 1;
+    -moz-transform: scale(1) translate(0);
+    -webkit-transform: scale(1) translate(0);
   }
   75% {
-    transform: translate(-2px, -2px);
-    scale: 1.02;
+    -moz-transform: scale(1.02) translate(-2px, -2px);
+    -webkit-transform: scale(1.02) translate(-2px, -2px);
   }
 }
