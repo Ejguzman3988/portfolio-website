@@ -106,19 +106,13 @@
 }
 
 .video {
-  /* position: fixed; */
-  /* top: 50px;
-  left: 0px; */
   position: absolute;
-  /* background: rgba(128, 128, 128, 0.496); */
   height: 38%;
   width: 31%;
   z-index: 100;
   margin-top: -25px;
   z-index: 100;
-  /* margin-bottom: 20px; */
   border: rgba(0, 0, 0, 0.215) inset;
-  /* border-width: 30px; */
 }
 
 .exit-video {
@@ -131,10 +125,6 @@
   cursor: pointer;
 }
 
-/* .video {
-  width: 100%;
-  height: 100%;
-} */
 .hide-video {
   display: none;
 }
