@@ -16,7 +16,7 @@ const Sidebar = () => {
   }, []);
 
   const handleScroll = () => {
-    setNewTop(window.scrollY + Math.abs(window.screenY * 0.5));
+    setNewTop(window.scrollY + Math.abs(window.screen.availHeight * 0.3));
   };
 
   const links = [

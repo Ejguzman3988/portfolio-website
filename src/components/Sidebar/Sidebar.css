@@ -2,8 +2,9 @@
   position: absolute;
   top: 30%;
   right: 0px;
-  height: 40vh;
-  width: 100px;
+  height: 28vh;
+  width: 70px;
+  z-index: 5;
   /* opacity: 0.95; */
   /* border: 5px #2f4f4f double; */
   box-shadow: 10px 5px 30px rgb(0, 0, 0);
@@ -14,10 +15,10 @@
   background: linear-gradient(to bottom, #393939 0%, #151515 100%);
 }
 .sidebar__logos {
-  width: 80px;
+  width: 60px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1300px) {
   .sidebar {
     position: absolute;
     top: 30%;
@@ -33,6 +34,6 @@
     background: linear-gradient(to bottom, #393939 0%, #151515 100%);
   }
   .sidebar__logos {
-    width: 50px;
+    width: 45px;
   }
 }
