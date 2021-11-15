@@ -16,6 +16,7 @@ figure,
 blockquote,
 dl,
 dd {
+  font-family: "Times New Roman", Times, serif;
   margin: 0;
 }
 

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap");
 .intro {
   display: flex;
   justify-content: center;
@@ -6,6 +7,15 @@
   font-size: 4em;
   padding: 50px 0;
   border: var(--pink) solid;
+  font-family: "Playfair Display", serif;
+}
+
+.text-header {
+  padding-top: 25px;
+  font-family: "Playfair Display", serif;
+  font-weight: bolder;
+  text-align: center;
+  width: 100%;
 }
 
 .intro__greet {
