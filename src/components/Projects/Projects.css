@@ -50,6 +50,7 @@
   justify-content: center;
   background: white;
   height: 35vh;
+  width: 300px;
 }
 .projects__single--title {
   font-size: 1.25em;
@@ -57,7 +58,7 @@
 }
 .projects__single--description {
   margin-top: 20px;
-  font-size: 0.75em;
+  font-size: 0.9em;
 }
 
 .screen {
@@ -66,9 +67,12 @@
 }
 
 .screen-image {
-  width: 100%;
-  height: 70%;
+  width: 50%;
+  height: 100%;
   background-color: darkslategrey;
+}
+.actual-laptop image {
+  transform: scaleX(1.2) translateX(16.5%);
 }
 
 .laptop {
@@ -118,10 +122,12 @@
 .exit-video {
   position: absolute;
   top: 5%;
-  scale: 3;
   right: 5%;
+  height: 10%;
+  width: 10%;
+  font-size: 3em;
   z-index: 100;
-  color: rgba(0, 0, 0, 0.529);
+  color: white;
   cursor: pointer;
 }
 
@@ -185,7 +191,7 @@
       opacity: 0;
       width: 60%;
     }
-    75% {
+    50% {
       opacity: 1;
       width: 60%;
       transform: translateY(0);
@@ -193,7 +199,6 @@
     }
     100% {
       width: 100%;
-      height: 100%;
       transform: translateY(-50px);
     }
   }

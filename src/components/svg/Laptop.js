@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import video from "../../videos/test.mp4";
 import "./Laptop.css";
 
 const Laptop = ({ project }) => {
@@ -61,12 +60,7 @@ const Laptop = ({ project }) => {
             ) : (
               <>
                 <clipPath id="screen">
-                  <rect
-                    className="screen"
-                    id="_394805856"
-                    x="99.7316"
-                    y="148.522"
-                  />
+                  <rect className="screen" id="_394805856" x="0" y="148.522" />
                 </clipPath>
                 <image
                   className="screen-image"
@@ -124,14 +118,17 @@ const Laptop = ({ project }) => {
         <div className="exit-video" onClick={() => setModal(false)}>
           &#9746;
         </div>
-        <iframe
-          src={video}
-          title="description"
-          className={modal ? "video" : "hide-video"}
-          allowfullscreen
-          frameborder="0"
-          allow="autoplay"
-        ></iframe>
+        {modal ? (
+          <iframe
+            src={project.videoLink}
+            title="description"
+            className={modal ? "video" : "hide-video"}
+            allow="autoplay"
+            allowfullscreen
+            frameborder="0"
+            pauseVideo={!modal ? "true" : "false"}
+          ></iframe>
+        ) : null}
       </div>
     </div>
   );
