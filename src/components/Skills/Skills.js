@@ -41,9 +41,9 @@ const Skills = () => {
 
   return (
     <div className="skills">
-      <h5>FrontEnd</h5>
-      <div className="skills__front">{stackMap("backEnd")}</div>
       <h5>BackEnd</h5>
+      <div className="skills__front">{stackMap("backEnd")}</div>
+      <h5>FrontEnd</h5>
       <div className="skills__back">{stackMap("frontEnd")}</div>
     </div>
   );
