@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { PacmanLoader } from "react-spinners";
+import { ClimbingBoxLoader, PacmanLoader } from "react-spinners";
 import Project from "./Project";
 import { projectsJSON } from "./projectsJSON";
 import "./Projects.css";
@@ -45,6 +45,13 @@ const Projects = (props) => {
 
   return (
     <div id="projects">
+      <div className="text-header">
+        Updated Projects Coming Soon...
+        <div className="projects__box">
+          <ClimbingBoxLoader />
+        </div>
+      </div>
+
       <div className="projects">
         {projectsData.loading ? (
           <>

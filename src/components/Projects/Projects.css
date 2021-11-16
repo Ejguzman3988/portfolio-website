@@ -139,6 +139,11 @@
   border: red solid;
 }
 
+.projects__box {
+  display: inline-block;
+  margin-left: 40px;
+}
+
 @media only screen and (max-width: 1300px) {
   .laptop {
     margin-top: 0;
