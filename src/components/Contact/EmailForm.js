@@ -16,6 +16,11 @@ const EmailForm = () => {
   const [errors, setErrors] = useState("");
 
   const sendFeedback = (templateId, variables) => {
+    if (process.env.REACT_APP_USER_ID) {
+      console.log("something");
+    } else {
+      console.log("nothing");
+    }
     setEmail({ ...email, sending: true, btn: "Sending" });
     emailjs
       .send(
