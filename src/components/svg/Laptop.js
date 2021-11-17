@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ClickMe from "./ClickMe";
 import "./Laptop.css";
 
 const Laptop = ({ project }) => {
@@ -35,6 +36,7 @@ const Laptop = ({ project }) => {
         <defs></defs>
         <g id="Layer_x0020_1" className="actual-laptop">
           <rect className="fil0" y="0.000377953" />
+
           <g id="_275676976">
             <rect
               className="fil1"

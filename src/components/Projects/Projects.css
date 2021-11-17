@@ -83,6 +83,12 @@
   background: darkslategrey;
 }
 
+.laptop:hover {
+  -moz-transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+  cursor: pointer;
+}
+
 .laptop-modal {
   position: fixed;
   top: 0px;
@@ -142,6 +148,16 @@
 .projects__box {
   display: inline-block;
   margin-left: 40px;
+}
+.click-me {
+  display: inline-flexbox;
+  align-self: flex-start;
+  background: red;
+}
+#one-finger-click {
+  fill: yellow;
+  stroke: yellow; /* Background color against your svg */
+  stroke-width: 1px;
 }
 
 @media only screen and (max-width: 1300px) {
