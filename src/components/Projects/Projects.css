@@ -150,13 +150,16 @@
   margin-left: 40px;
 }
 .click-me {
-  display: inline-flexbox;
-  align-self: flex-start;
-  background: red;
+  position: absolute;
+  padding: 1px;
+  border: rgba(0, 0, 0, 0.495) solid;
+  margin: 130px 10px;
+  background: rgba(14, 134, 155, 0.187);
+  box-shadow: rgb(22, 36, 36) 1px 8px 8px;
 }
 #one-finger-click {
-  fill: yellow;
-  stroke: yellow; /* Background color against your svg */
+  fill: rgb(76, 76, 69);
+  stroke: rgba(255, 255, 255, 0.851); /* Background color against your svg */
   stroke-width: 1px;
 }
 

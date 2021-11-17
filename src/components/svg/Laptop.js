@@ -20,6 +20,9 @@ const Laptop = ({ project }) => {
 
   return (
     <div>
+      <div className="click-me">
+        <ClickMe />
+      </div>
       <svg
         style={{
           shapeRendering: "geometricPrecision",
