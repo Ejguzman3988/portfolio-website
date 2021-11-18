@@ -115,7 +115,8 @@
 @media only screen and (max-width: 1355px) {
   .about {
     font-size: 1.25em;
-    height: 60vh;
+    height: 300px;
+    overflow-y: hidden;
   }
   .about__first,
   .about__second,
