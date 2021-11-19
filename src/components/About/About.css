@@ -22,20 +22,12 @@
   position: absolute;
   transform-style: preserve-3d;
   width: 100vw;
-  animation: 50s turn ease-in-out infinite;
+  animation: 10s turn ease-in-out infinite;
 }
 .about__first,
 .about__second,
 .about__third,
 .about__fourth {
-  /* border: navy ridge; */
-  height: 49.5vh;
-  margin: 0;
-  padding: 0;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   min-width: 100vw;
   position: absolute;
   backface-visibility: hidden;
@@ -118,13 +110,12 @@
     height: 300px;
     overflow-y: hidden;
   }
+}
+@media only screen and (max-width: 800px) {
   .about__first,
   .about__second,
   .about__third,
   .about__fourth {
-    padding-top: 20%;
-    padding-left: 10%;
-    padding-right: 10%;
-    height: 59.5vh;
+    margin-top: 40px;
   }
 }
