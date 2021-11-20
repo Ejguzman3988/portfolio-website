@@ -7,13 +7,12 @@ const About = () => {
       <div className="text-header">About Me</div>
       <div className="about__content">
         <p className="about__first">
-          Excited by solving challenging problems. Passionate about creating new
-          ideas. Inspired by tech’s ability to make information easily and
-          readily available.
+          Excited by solving challenging problems. Inspired by how code can
+          shape our world.
         </p>
         <p className="about__second">
-          Passionate about learning, bringing ideas to life, and creating
-          anything that comes to mind.
+          I want to continue growing my skills, and some of my interest lie in
+          machine learning, AI, and Cloud Computing.
         </p>
         <p className="about__third">
           I am looking for a workplace where I can nurture my Software
