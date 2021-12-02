@@ -50,29 +50,29 @@
 
 @keyframes change-colors {
   0% {
-    fill: var(--pink);
-    border-color: var(--pink);
+    fill: #165b33;
+    border-color: #165b33;
   }
 
   20% {
-    fill: var(--navy);
-    border-color: var(--navy);
+    fill: #146b3a;
+    border-color: #146b3a;
   }
   40% {
     fill: darkslategray;
     border-color: darkslategray;
   }
   60% {
-    fill: skyblue;
-    border-color: skyblue;
+    fill: #ea4630;
+    border-color: #ea4630;
   }
   80% {
-    fill: purple;
-    border-color: purple;
+    fill: #bb2528;
+    border-color: #bb2528;
   }
   100% {
-    fill: var(--pink);
-    border-color: var(--pink);
+    fill: #165b33;
+    border-color: #165b33;
   }
 }
 
