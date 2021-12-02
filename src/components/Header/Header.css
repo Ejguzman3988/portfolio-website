@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   font-size: 4em;
-  box-shadow: 0px 5px 50px dimgrey;
+  box-shadow: 0px 5px 50px rgb(197, 150, 150);
 }
 
 .logo-smile {
@@ -14,7 +14,8 @@
 }
 
 #background {
-  fill: var(--blue-green);
+  /* background-repeat: no-repeat; */
+  stroke: rgb(13, 91, 225);
 }
 .hoodie-color {
   fill: darkslategray;

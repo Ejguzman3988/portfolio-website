@@ -12,7 +12,14 @@ const LogoSmile = () => {
         className="smile"
       >
         <g id="logoSmile">
-          <ellipse id="background" cx="88" cy="92" rx="59" ry="57" />
+          <ellipse
+            id="background"
+            fill="url(#img1)"
+            cx="88"
+            cy="92"
+            rx="59"
+            ry="57"
+          />
           <g id="body">
             <g id="sweater">
               <g id="hoodie">
@@ -870,6 +877,21 @@ const LogoSmile = () => {
               result="effect1_innerShadow_32_5"
             />
           </filter>
+          <pattern
+            id="img1"
+            patternUnits="userSpaceOnUse"
+            width="150"
+            height="150"
+          >
+            <image
+              href="https://i.giphy.com/media/CkBzt6qXCCXw4/giphy.webp"
+              x="0"
+              y="10"
+              className="background"
+              height="150"
+              width="150"
+            />
+          </pattern>
         </defs>
       </svg>
     </div>

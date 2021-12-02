@@ -17,7 +17,7 @@ const LogoGrin = () => {
             cy="92"
             rx="59"
             ry="57"
-            fill="#7451F6"
+            fill="url(#img1)"
           />
           <g id="body">
             <g id="sweater">
@@ -590,6 +590,21 @@ const LogoGrin = () => {
               result="effect2_foregroundBlur_32_265"
             />
           </filter>
+          <pattern
+            id="img1"
+            patternUnits="userSpaceOnUse"
+            width="150"
+            height="150"
+          >
+            <image
+              href="https://i.giphy.com/media/CkBzt6qXCCXw4/giphy.webp"
+              x="0"
+              y="10"
+              className="background"
+              height="150"
+              width="150"
+            />
+          </pattern>
         </defs>
       </svg>
     </div>
