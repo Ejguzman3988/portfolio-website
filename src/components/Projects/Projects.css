@@ -100,6 +100,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 .video-modal {
   position: fixed;
@@ -208,22 +209,15 @@
     z-index: 10;
     margin-top: -25px;
     border: none;
+    will-change: opacity;
     animation: 4s fade-in linear 1 forwards;
   }
   @keyframes fade-in {
     0% {
       opacity: 0;
-      width: 60%;
     }
     50% {
       opacity: 1;
-      width: 60%;
-      transform: translateY(0);
-      box-shadow: none;
-    }
-    100% {
-      width: 100%;
-      transform: translateY(-50px);
     }
   }
 }

@@ -19,8 +19,7 @@
   box-shadow: 0px 5px 10px dimgrey;
 }
 .hoodie-color {
-  fill: darkslategray;
-  animation: change-colors 15s ease-in-out infinite;
+  fill: #ea4630;
 }
 .logo::before {
   display: flex;
@@ -31,37 +30,39 @@
   color: black;
   position: absolute;
   background: white;
-  border: 5px var(--navy) solid;
+  border: 5px black solid;
   width: 240px;
   height: 50px;
   border-radius: 100%;
   transform: translate(80px, 320px);
-  animation: change-colors 15s ease-in-out infinite;
+
   box-shadow: 0px 5px 50px dimgrey;
 }
 
 .head {
   transform-origin: center;
   transform: rotate(0) translate(0, 3px);
+  will-change: transform;
   animation: head-tilt 10s ease-in-out infinite;
 }
 
 #body {
+  will-change: transform;
   animation: shoulder-raise 6s ease-in-out infinite;
 }
 
-@keyframes change-colors {
+/* @keyframes change-colors {
   0% {
-    fill: #165b33;
+    
     border-color: #165b33;
   }
 
   20% {
-    fill: #146b3a;
+    
     border-color: #146b3a;
   }
   40% {
-    fill: darkslategray;
+    fill: darkslategray;   
     border-color: darkslategray;
   }
   60% {
@@ -69,14 +70,14 @@
     border-color: #ea4630;
   }
   80% {
-    fill: #bb2528;
+  
     border-color: #bb2528;
   }
   100% {
-    fill: #165b33;
+   
     border-color: #165b33;
   }
-}
+} */
 
 @keyframes head-tilt {
   0% {

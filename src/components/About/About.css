@@ -22,6 +22,7 @@
   position: absolute;
   transform-style: preserve-3d;
   width: 100vw;
+  will-change: transform;
   animation: 50s turn ease-in-out infinite;
 }
 .about__first,
