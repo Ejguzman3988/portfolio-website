@@ -7,18 +7,25 @@ import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import Sidebar from "./components/Sidebar/Sidebar";
+import Snowfall from "react-snowfall";
 
 function App() {
   return (
-    <div>
-      <Header />
-      <Sidebar />
-      <Intro />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-    </div>
+    <>
+      <Snowfall
+        snowflakeCount={50}
+        style={{ top: 0, position: "fixed", zIndex: 100 }}
+      />
+      <div>
+        <Header />
+        <Sidebar />
+        <Intro />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+      </div>
+    </>
   );
 }
 
