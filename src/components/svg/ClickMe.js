@@ -17,10 +17,10 @@ const ClickMe = () => {
         <defs />
         <g
           fill="none"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           id="Page-1"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
         >
           <g fill="#000000" id="icon-27-one-finger-click">
             <path
