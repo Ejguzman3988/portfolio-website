@@ -8,15 +8,17 @@ import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Snowfall from "react-snowfall";
+import ColorUI from "./components/UI/ColorUI";
 
 function App() {
   return (
-    <>
+    <div>
       <Snowfall
         snowflakeCount={50}
         style={{ top: 0, position: "fixed", zIndex: 100 }}
       />
       <div>
+        <ColorUI />
         <Header />
         <Sidebar />
         <Intro />
@@ -25,7 +27,7 @@ function App() {
         <Projects />
         <Contact />
       </div>
-    </>
+    </div>
   );
 }
 
