@@ -1,4 +1,5 @@
 import React from "react";
+import window from "../../images/window.jpg";
 
 const LogoSmile = () => {
   return (
@@ -884,12 +885,13 @@ const LogoSmile = () => {
             height="150"
           >
             <image
-              href="https://i.giphy.com/media/CkBzt6qXCCXw4/giphy.webp"
-              x="0"
-              y="10"
+              href={window}
+              x="2"
+              y="25"
               className="background"
-              height="150"
-              width="150"
+              height="180"
+              width="180"
+              opacity="0.9"
             />
           </pattern>
         </defs>

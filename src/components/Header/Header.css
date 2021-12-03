@@ -15,7 +15,8 @@
 
 #background {
   /* background-repeat: no-repeat; */
-  stroke: rgb(13, 91, 225);
+
+  box-shadow: 0px 5px 10px dimgrey;
 }
 .hoodie-color {
   fill: darkslategray;
