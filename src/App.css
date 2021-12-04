@@ -13,4 +13,6 @@ body {
 .color-buttons {
   position: absolute;
   display: grid;
+  left: 10px;
+  top: 10px;
 }

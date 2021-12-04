@@ -14,9 +14,7 @@
 }
 
 #background {
-  /* background-repeat: no-repeat; */
-
-  box-shadow: 0px 5px 10px dimgrey;
+  fill: var(--blue-green);
 }
 .hoodie-color {
   fill: #ea4630;
@@ -50,34 +48,6 @@
   will-change: transform;
   animation: shoulder-raise 6s ease-in-out infinite;
 }
-
-/* @keyframes change-colors {
-  0% {
-    
-    border-color: #165b33;
-  }
-
-  20% {
-    
-    border-color: #146b3a;
-  }
-  40% {
-    fill: darkslategray;   
-    border-color: darkslategray;
-  }
-  60% {
-    fill: #ea4630;
-    border-color: #ea4630;
-  }
-  80% {
-  
-    border-color: #bb2528;
-  }
-  100% {
-   
-    border-color: #165b33;
-  }
-} */
 
 @keyframes head-tilt {
   0% {

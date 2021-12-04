@@ -5,6 +5,13 @@ export const AniContext = createContext();
 export const AniProvider = ({ children }) => {
   const [run, setRun] = useState(true);
   const [hoodieColor, setHoodieColor] = useState("#ea4630");
+  const [santa, setSanta] = useState(false);
+
+  const SantaState = {
+    santa,
+    setSanta,
+  };
+
   const AniState = {
     run,
     setRun,
@@ -16,7 +23,7 @@ export const AniProvider = ({ children }) => {
   };
 
   return (
-    <AniContext.Provider value={{ AniState, HoodieState }}>
+    <AniContext.Provider value={{ AniState, HoodieState, SantaState }}>
       {children}
     </AniContext.Provider>
   );
