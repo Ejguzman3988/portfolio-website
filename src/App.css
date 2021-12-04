@@ -12,6 +12,5 @@ body {
 
 .color-buttons {
   position: absolute;
-  display: flex;
-  flex-wrap: row;
+  display: grid;
 }
