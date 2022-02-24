@@ -71,6 +71,7 @@ const EmailForm = () => {
     <div className="contact__header">
       <form className="contact__form" onSubmit={handleSubmit}>
         <div className="contact__errors">{errors}</div>
+        <h3>Contant Form</h3>
 
         <label className="label-email" htmlFor="email">
           Your Email <span style={{ color: "#ff8484" }}>*</span>

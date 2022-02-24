@@ -132,6 +132,7 @@ const Laptop = ({ project }) => {
             allowfullscreen
             frameborder="0"
             pauseVideo={!modal ? "true" : "false"}
+            allowFullScreen
           ></iframe>
         ) : null}
       </div>
