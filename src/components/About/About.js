@@ -15,13 +15,12 @@ const About = () => {
           machine learning, AI, and Cloud Computing.
         </p>
         <p className="about__third">
-          I am looking for a workplace that values hardwork, provides
-          competitive benifits, and allows for upward mobility.
+          I am looking for a workplace that values hard work, provides
+          competitive benefits, and allows for upward mobility.
         </p>
         <p className="about__fourth">
-          Self motivator that takes initiative and tackles challenges. I own my
-          mistakes and failures and learn from them. Strive to make every
-          project or task your best work — no compromises.
+          I own my mistakes and failures and learn from them. Strive to make
+          every project or task my best work — no compromises.
         </p>
       </div>
     </div>
