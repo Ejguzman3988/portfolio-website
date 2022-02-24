@@ -36,7 +36,7 @@
 /* TODO: CHECK NAMING OF NESTED __ CSS  */
 .projects__single--content {
   display: flex;
-  background-color: darkslategrey;
+  background-color: var(--navy);
   justify-content: center;
   align-items: center;
   flex-direction: row;
@@ -69,7 +69,7 @@
 .screen-image {
   width: 50%;
   height: 100%;
-  background-color: darkslategrey;
+  background-color: var(--navy);
 }
 .actual-laptop image {
   transform: scaleX(1.2) translateX(16.5%);
@@ -77,10 +77,10 @@
 
 .laptop {
   margin-top: 10px;
-  border-right: 5px black solid;
+  border-right: 2px black solid;
   height: var(--lap-height);
   width: var(--lap-width);
-  background: darkslategrey;
+  background: var(--navy);
 }
 
 .laptop:hover {
@@ -170,12 +170,12 @@
     border-right: none;
     height: var(--lap-height);
     width: var(--lap-width);
-    background: darkslategrey;
+    background: var(--navy);
   }
   .projects__single--text {
     padding: 0 20px;
     display: flex;
-    border-top: 5px black solid;
+    border-top: 2px black solid;
     flex-direction: column;
     justify-content: center;
     background: white;
@@ -184,7 +184,7 @@
 
   .projects__single--content {
     display: flex;
-    background-color: darkslategrey;
+    background-color: var(--navy);
     justify-content: center;
     align-items: center;
     flex-direction: column;

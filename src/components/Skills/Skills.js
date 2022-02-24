@@ -1,12 +1,12 @@
 import React from "react";
-import html from "../../images/html.svg";
+import html from "../../images/html.png";
 import javascript from "../../images/javascript.svg";
 import css from "../../images/css.svg";
-import react from "../../images/react.svg";
-import redux from "../../images/redux.svg";
-import ruby from "../../images/ruby.svg";
-import rails from "../../images/rails.svg";
-import pg from "../../images/pg.svg";
+import react from "../../images/react.png";
+import redux from "../../images/redux.png";
+import ruby from "../../images/ruby.png";
+import rails from "../../images/rails.png";
+import pg from "../../images/pg.png";
 import sqlite from "../../images/sqlite.svg";
 import "./Skills.css";
 

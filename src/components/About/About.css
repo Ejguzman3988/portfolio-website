@@ -10,7 +10,7 @@
   color: white;
   display: flex;
   font-size: 2em;
-  height: 50vh;
+  height: 300px;
   position: relative;
   transform-style: preserve-3d;
   overflow-x: hidden;
@@ -33,9 +33,9 @@
   position: absolute;
   backface-visibility: hidden;
   transform-style: preserve-3d;
-  padding-top: 10%;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .about__first {
   transform: translateZ(100vw);
